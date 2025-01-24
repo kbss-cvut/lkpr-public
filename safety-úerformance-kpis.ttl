@@ -1,0 +1,218 @@
+@prefix : <http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri-schema: <https://kbss.felk.cvut.cz/lkpr/ontologies/runway-inspection/> .
+@base <http://onto.fel.cvut.cz/ontologies/safety-performance-kpis> .
+
+<http://onto.fel.cvut.cz/ontologies/safety-performance-kpis> rdf:type owl:Ontology ;
+                                                              owl:versionIRI <http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/0.0.1> ;
+                                                              owl:imports <http://www.opengis.net/ont/geosparql/1.1> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-corrective-action
+:has-corrective-action rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-discrepancy
+:has-discrepancy rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-inspected-condition
+:has-inspected-condition rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-operator
+:has-operator rdf:type owl:ObjectProperty ;
+              rdfs:range :employee .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-point
+:has-point rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf geo:hasGeometry .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-priority
+:has-priority rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-state
+:has-state rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/has-trail
+:has-trail rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf geo:hasGeometry .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/is-classified-by
+:is-classified-by rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/is-classified-by-organizational-category
+:is-classified-by-organizational-category rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf :is-classified-by .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/is-clissified-by-inspection-object
+:is-classified-by-inspection-object rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf :is-classified-by .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/is-fixed-by
+:is-fixed-by rdf:type owl:ObjectProperty ;
+             rdfs:range :employee .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/is-inspection-of
+:is-inspection-of rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/is-part-of
+:is-part-of rdf:type owl:ObjectProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/located-at
+:located-at rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf geo:hasGeometry ;
+            rdfs:range :point .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+geo:hasGeometry rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/date
+:date rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/due-date
+:due-date rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/elevation
+:elevation rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/id
+:id rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/repair-date
+:repair-date rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/start
+:start rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/username
+:username rdf:type owl:DatatypeProperty .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/value
+:value rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+geo:asWKT rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/condition
+:condition rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/corrective-action
+:corrective-action rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/corrective-action-state
+:corrective-action-state rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/corrective-action-type
+:corrective-action-type rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/discrepancy
+:discrepancy rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/employee
+:employee rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/finding
+:finding rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/inspected-condition
+:inspected-condition rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/inspected-condition-state
+:inspected-condition-state rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/inspection
+:inspection rdf:type owl:Class ;
+            rdfs:subClassOf geo:Feature .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/inspection-type
+:inspection-type rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/point
+:point rdf:type owl:Class ;
+       rdfs:subClassOf geo:Geometry .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/priority
+:priority rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/repair
+:repair rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/section
+:section rdf:type owl:Class .
+
+
+###  http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/trail
+:trail rdf:type owl:Class ;
+       rdfs:subClassOf geo:Geometry .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+geo:Feature rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+geo:Geometry rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
