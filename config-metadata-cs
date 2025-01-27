@@ -1,11 +1,11 @@
-abstract=Ontologie popis dat je určena k popisu datových i jiných zdrojů. Vychází z ontologie Unified Foundational Ontology (UFO) a používá pojmy z ontologií datadset-descriptor a SKOS.
+abstract=Ontologie KPIS pochází z modelu vyvořenéího pro lepší kontrolu bezpečnosti v leteckém provozu v projektu LKPR. Vychází z ontologie Unified Foundational Ontology (UFO).
 ontologyTitle=Model LKPR
-ontologyPrefix=a-lkpr-model-pojem
-ontologyNamespaceURI=https://onto.fel.cvut.cz/ontologies/slovnik/agendovy/lkpr-model/
+ontologyPrefix=lkpr-model-pojem
+ontologyNamespaceURI=https://onto.fel.cvut.cz/ontologies/slovnik/lkpr-model/
 ontologyName=lkpr-model
-thisVersionURI=https://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/verze/1.0.10
-latestVersionURI=https://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/verze/1.0.10
-previousVersionURI=https://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/verze/1.0.9
+thisVersionURI=https://onto.fel.cvut.cz/ontologies/slovnik/lkpr-model/verze/1.0.10
+latestVersionURI=https://onto.fel.cvut.cz/ontologies/slovnik/lkpr-model/verze/1.0.10
+previousVersionURI=https://onto.fel.cvut.cz/ontologies/slovnik/lkpr-model/verze/1.0.9
 dateCreated=24.1.2025
 dateModified=24.1.2025
 ontologyRevisionNumber=1.0.0
@@ -13,7 +13,7 @@ dateIssued=24.1.2025
 licenseURI=https://creativecommons.org/licenses/by/4.0/
 licenseName=https://creativecommons.org/licenses/by/4.0/
 licenseIconURL=null
-citeAs=Michal Med. LKPR model. Získáno z: http://onto.fel.cvut.cz/ontologies/slovnik/agendovy/popis-dat/model
+citeAs=Michal Med. LKPR model. Získáno z: http://onto.fel.cvut.cz/ontologies/slovnik/lkpr-model
 
 //pathToIntro=https://raw.githubusercontent.com/kbss-cvut/popis-dat-ontology/main/doc/sections/introduction.html
 //pathToAbstract=https://raw.githubusercontent.com/kbss-cvut/popis-dat-ontology/main/doc/sections/abstract.html
