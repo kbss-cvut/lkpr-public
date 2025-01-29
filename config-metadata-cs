@@ -15,10 +15,10 @@ licenseName=https://creativecommons.org/licenses/by/4.0/
 licenseIconURL=null
 citeAs=Michal Med. LKPR model. Získáno z: http://onto.fel.cvut.cz/ontologies/slovnik/lkpr-model
 
-//pathToIntro=https://raw.githubusercontent.com/kbss-cvut/popis-dat-ontology/main/doc/sections/introduction.html
-//pathToAbstract=https://raw.githubusercontent.com/kbss-cvut/popis-dat-ontology/main/doc/sections/abstract.html
-//pathToDescription=https://raw.githubusercontent.com/kbss-cvut/popis-dat-ontology/main/doc/sections/description.html
-//pathToReferences=https://raw.githubusercontent.com/kbss-cvut/popis-dat-ontology/main/doc/sections/references.html
+pathToIntro=https://raw.githubusercontent.com/kbss-cvut/lkpr-public/main/doc/sections/introduction.html
+pathToAbstract=https://raw.githubusercontent.com/kbss-cvut/lkpr-public/main/doc/sections/abstract.html
+pathToDescription=https://raw.githubusercontent.com/kbss-cvut/lkpr-public/main/doc/sections/description.html
+pathToReferences=https://raw.githubusercontent.com/kbss-cvut/lkpr-public/main/doc/sections/references.html
 
 status=Specifikace
 logo=
