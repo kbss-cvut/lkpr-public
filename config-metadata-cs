@@ -1,4 +1,4 @@
-abstract=Ontologie Safety performance KPIS pochází z modelu vyvořenéího pro lepší kontrolu bezpečnosti v leteckém provozu v projektu LKPR. Vychází z ontologie Unified Foundational Ontology (UFO).
+abstract=Ontologie Safety performance KPIS pochází z modelu vyvořeného pro lepší kontrolu bezpečnosti v leteckém provozu v projektu LKPR. Pro ontologii byly vytvořeny mapování na ontologii UFO (https://github.com/kbss-cvut/lkpr-model/blob/main/safety-performance-kpis-ufo-mapping.ttl) a STAMP (https://github.com/kbss-cvut/lkpr-model/blob/main/safety-performance-kpis-stamp-mapping.ttl).
 ontologyTitle=Safety performance KPIS model
 ontologyPrefix=safety-performance-kpis
 ontologyNamespaceURI=http://onto.fel.cvut.cz/ontologies/safety-performance-kpis/
@@ -37,8 +37,8 @@ contributors=
 contributorsURI=
 contributorsInstitution=
 contributorsInstitutionURI=
-importedOntologyNames=dataset-descriptor;glosář;ufo-a;ufo-a;ufo-b-dispositions;ufo-b-temporal;ufo-b;ufo-b;ufo-c;ufo-c;ufo-language-basic;ufo-language-ontouml;ufo-language;ufo-types;ufo
-importedOntologyURIs=http://onto.fel.cvut.cz/ontologies/dataset-descriptor;http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/glosář;http://onto.fel.cvut.cz/ontologies/ufo-a;http://onto.fel.cvut.cz/ontologies/ufo-a;http://onto.fel.cvut.cz/ontologies/ufo-b-dispositions;http://onto.fel.cvut.cz/ontologies/ufo-b-temporal;http://onto.fel.cvut.cz/ontologies/ufo-b;http://onto.fel.cvut.cz/ontologies/ufo-b;http://onto.fel.cvut.cz/ontologies/ufo-c;http://onto.fel.cvut.cz/ontologies/ufo-c;http://onto.fel.cvut.cz/ontologies/ufo-language-basic;http://onto.fel.cvut.cz/ontologies/ufo-language-ontouml;http://onto.fel.cvut.cz/ontologies/ufo-language;http://onto.fel.cvut.cz/ontologies/ufo-types;http://onto.fel.cvut.cz/ontologies/ufo
+importedOntologyNames=geosparql
+importedOntologyURIs=http://www.opengis.net/ont/geosparql/1.1
 extendedOntologyNames=
 extendedOntologyURIs=
 RDFXMLSerialization=ontology.owl
